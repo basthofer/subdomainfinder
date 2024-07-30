@@ -33,16 +33,16 @@ def get_subdomains():
     if not domain:
         return jsonify({'error': 'Domain parameter is required'}), 400
 
-    url = 'https://subdomainfinder.io/'
+    url = 'https://proxy.darkling.workers.dev/'
     headers = {
-        'Host': 'subdomainfinder.io',
+        'Host': 'proxy.darkling.workers.dev',
         'Cache-Control': 'max-age=0',
         'Sec-Ch-Ua': '"Not/A)Brand";v="8", "Chromium";v="126"',
         'Sec-Ch-Ua-Mobile': '?0',
         'Sec-Ch-Ua-Platform': '"Windows"',
         'Accept-Language': 'en-US',
         'Upgrade-Insecure-Requests': '1',
-        'Origin': 'https://subdomainfinder.io',
+        'Origin': 'https://proxy.darkling.workers.dev',
         'Content-Type': 'application/x-www-form-urlencoded',
         'User-Agent':
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.127 Safari/537.36',
@@ -52,7 +52,7 @@ def get_subdomains():
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-User': '?1',
         'Sec-Fetch-Dest': 'document',
-        'Referer': 'https://subdomainfinder.io/',
+        'Referer': 'https://proxy.darkling.workers.dev',
         'Priority': 'u=0, i',
     }
 
